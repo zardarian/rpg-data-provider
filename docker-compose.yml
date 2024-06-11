@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  rpg_data_provider:
+    container_name: rpg_data_provider
+    build: .
+    command: python ./rpg_data_provider/manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
