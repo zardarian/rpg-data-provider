@@ -11,3 +11,7 @@ services:
       - docker-lebahbiru-network
     env_file:
       - .env
+
+networks:
+  docker-lebahbiru-network:
+    external: true
