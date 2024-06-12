@@ -7,11 +7,5 @@ services:
     command: python ./rpg_data_provider/manage.py runserver 0.0.0.0:8000
     ports:
       - 8001:8000
-    networks:
-      - docker-lebahbiru-network
     env_file:
       - .env
-
-networks:
-  docker-lebahbiru-network:
-    external: true
